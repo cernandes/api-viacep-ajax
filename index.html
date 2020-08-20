@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>ViaCEP Webservice AJAX</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Inicio do formulario -->
+    <form method="get" action="." class="form-style">
+        <span>Preencha o campo cep e pressione TAB para auto completar o formulário</span> <br>
+        <fieldset class="fieldset-style">
+            <legend>API via CEP</legend>
+            <label>Cep:
+                <input class="input-cep" name="cep" type="text" id="cep" value="" size="10"
+                    maxlength="9" /></label><br />
+            <label>Rua:
+                <input class="rua" name="rua" type="text" value="" size="60" /></label><br />
+            <label>Bairro:
+                <input class="bairro" name="bairro" type="text" value="" size="40" /></label><br />
+            <label>Cidade:
+                <input class="cidade" name="cidade" type="text" value="" size="40" /></label><br />
+            <label>Estado:
+                <input class="estado" name="uf" type="text" value="" size="2" /></label><br />
+        </fieldset>
+    </form>
+    <!-- Adicionando Javascript -->
+    <script src="./src/api-ajax.js"></script>
+</body>
+
+</html>
